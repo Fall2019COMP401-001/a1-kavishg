@@ -43,8 +43,8 @@ public class A1Novice {
 		
 		for(int i=0; i<customers; i++)
 		{
-			
-			System.out.println(first[i].charAt(0)+". "+last[i]+": "+price_total[i]);
+			String value = String.format("%.2f", price_total[i]);
+			System.out.println(first[i].charAt(0)+". "+last[i]+": "+value);
 		}
 			
 	}
