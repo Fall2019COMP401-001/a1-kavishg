@@ -40,6 +40,7 @@ public class A1Novice {
 			price_total[i] = compute_total(quantity, price);
 			
 		}
+		scan.close();
 		
 		for(int i=0; i<customers; i++)
 		{
