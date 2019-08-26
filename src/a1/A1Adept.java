@@ -41,7 +41,7 @@ public class A1Adept {
 				BoughtItemName[j] = scan.next();
 				for(int k=0; k<ItemName.length; k++)
 				{
-					if(BoughtItemName[j].equals(ItemName[k]))
+					if(BoughtItemName[j].equals(ItemName[k]))	
 						BoughtPrice[j] = price[k];
 				}
 				
@@ -77,10 +77,14 @@ public class A1Adept {
 	{
 		double max = price_total[0];
 		int index=0;
-		for(int i=0; i<price_total.length; i++)
+		for(int i=1; i<price_total.length; i++)
 		{
 			if(price_total[i]>max)
+			{
+				max=price_total[i];
 				index=i;
+			}
+							
 		}
 		return index;
 	}
@@ -89,10 +93,13 @@ public class A1Adept {
 	{
 		double min = price_total[0];
 		int index=0;
-		for(int i=0; i<price_total.length; i++)
+		for(int i=1; i<price_total.length; i++)
 		{
 			if(price_total[i]<min)
+			{
+				min=price_total[i];
 				index=i;
+			}
 		}
 		return index;
 	}
