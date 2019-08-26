@@ -57,10 +57,7 @@ public class A1Jedi {
 				
 				
 			}	
-			for(int l=0; l<items; l++)
-			{
-				match[l]=0;
-			}
+			
 			}
 			
 		
