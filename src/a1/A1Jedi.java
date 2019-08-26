@@ -36,7 +36,7 @@ public class A1Jedi {
 			int quantity[] = new int[ItemsBought];
 			String BoughtItemName[] = new String[ItemsBought];
 			double BoughtPrice[] = new double[ItemsBought]; 
-			
+			int match[]= new int[items];
 			for(int j=0; j<ItemsBought; j++)
 			{
 				quantity[j]=scan.nextInt();
@@ -46,14 +46,24 @@ public class A1Jedi {
 					if(BoughtItemName[j].equals(ItemName[k]))
 					{	
 						BoughtPrice[j] = price[k];
-						count[k]++;
+						match[k]++;
+						if(match[k]==1)
+						{
+						    count[k]++;
+						}
 						total_quantity[k]=total_quantity[k]+quantity[j];
 					}
 				}
 				
+				
 			}	
+			for(int l=0; l<items; l++)
+			{
+				match[l]=0;
+			}
+			}
 			
-		}
+		
 		scan.close();
 		
 		for(int i=0; i<items; i++)
