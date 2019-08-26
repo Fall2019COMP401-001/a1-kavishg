@@ -56,11 +56,9 @@ public class A1Jedi {
 				}
 				
 				
-			}	
+			  }	
 			
-			}
-			
-		
+			}		
 		scan.close();
 		
 		for(int i=0; i<items; i++)
