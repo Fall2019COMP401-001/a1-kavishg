@@ -22,8 +22,7 @@ public class A1Jedi {
 		
 		int customers = scan.nextInt();
 		String first[] = new String[customers];
-		String last[] = new String[customers];
-		double price_total[] = new double[customers];
+		String last[] = new String[customers];		
 		int count[] = new int[items];
 		int total_quantity[] = new int[items];
 		
